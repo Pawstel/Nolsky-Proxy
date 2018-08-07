@@ -1,0 +1,6 @@
+node_modules/
+<<<<<<< HEAD
+coverage/
+=======
+database/Populator.js
+>>>>>>> d4c51c1b82f91277bcaff53bbcbfe59d1470c96c

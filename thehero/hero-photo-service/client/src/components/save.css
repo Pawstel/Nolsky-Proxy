@@ -1,0 +1,291 @@
+.save-container {
+	display: flex;
+	justify-content: center;
+}
+
+.save {
+	border: 0.1px solid rgba(0.7,0.7,0.7, .1);
+	background-color: white;
+	width: 570px;
+	height: 670px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	overflow: auto; /* to enable scrolling */
+
+}
+
+.top-part-container {
+	display: flex;
+	justify-content: flex-start;
+	flex-direction: column;
+}
+
+.xbutton-container {
+	display: flex;
+	justify-content: flex-start;
+}
+
+.xbutton {
+	margin-top: 50px;
+	margin-bottom: 10px;
+	margin-left: 50px;
+	height: 20px;
+	width: 20px;
+}
+
+.title-container {
+	display:flex;
+	justify-content: flex-start;
+}
+
+.title {
+	margin-top: 15px;
+	size: 105px;
+	margin-left: 50px;
+	font-weight: bold;
+	color:#484848;
+}
+
+.list-container {
+	width: 100%;
+	display:flex;
+	justify-content: center;
+	overflow: auto; /* to enable scrolling */
+}
+
+.list {
+	width: 100%;
+	height: 400px;
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 100px;
+
+}
+
+.list-item {
+	border-top: .4px solid rgba(0.7,0.7,0.7, .6);
+	color:#484848;
+	margin-left: 50px;
+	margin-right: 50px;
+	margin-top: 5px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.list-save-button {
+	height:20px;
+	width:20px;
+	font-size: 15px;
+	border-radius: 6px;
+	margin-top: 12px;
+}
+
+.create-new-list-container {
+	display:flex;
+	justify-content: flex-start;
+}
+
+.create-new-list {
+	margin-left: 50px;
+	font-weight: bold;
+	color:#007D8C;
+}
+
+.new-list-info-container {
+	margin-left: 50px;
+	margin-right: 50px;
+	margin-bottom: 20px;
+	display: flex;
+	flex-direction: column;
+}
+
+.new-list-name-container {
+	display:flex;
+	justify-content: flex-start;
+}
+
+.new-list-name {
+	color:#484848;
+	font-size: 20px;
+}
+
+.new-list-input-container {
+	display: flex;
+	justify-content: flex-start;
+	margin-top:10px;
+	margin-bottom: 10px;
+
+}
+
+.new-list-input {
+	border: 1px solid #007D8C;
+	font-size: 17px;
+	width: 100%;
+	height: 40px;
+	color:#484848;;
+
+}
+
+.new-list-buttons-container {
+	margin-top: 10px;
+	display: flex;
+	justify-content: flex-end;
+}
+
+.new-list-cancel-button {
+	width: 100px;
+	height: 50px;
+    border-radius: 6px;
+    font-size:15px;
+    font-weight: bold;
+    border: 2px solid #007D8C;
+    color: #007D8C;
+
+
+}
+
+.new-list-create-button {
+	width: 100px;
+	height: 50px;
+	margin-left: 10px;
+	border-radius: 6px;
+	font-size:15px;
+	font-weight: bold;
+	background-color:#6BB7B9;
+	opacity: .5;
+	color:white;
+
+}
+
+
+.footer-container {
+	border-top: .4px solid rgba(0.7,0.7,0.7, .6);
+	width: 100%;
+	margin-bottom: 10px;
+	display: flex;
+	justify-content: space-between;
+	flex-direction: column;
+	height: 150px;
+
+
+}
+
+.footer-drop-container {
+	display: flex;
+	justify-content: flex-start;
+}
+
+.footer-drop-symbol {
+	width: 13px;
+	height: auto;
+	margin-left: 50px;
+	margin-top: 30px;
+}
+
+.footer {
+	margin-top: 15px;
+	display: flex;
+	justify-content: flex-start;
+	height: 80px;
+	margin-left: 50px;
+	margin-bottom: 10px;
+
+}
+
+.footer-hero-pic {
+	width: 100px;
+	height: 80px;
+}
+
+.footer-text-and-review-container {
+	margin-left: 10px;
+	display: flex;
+	justify-content: space-between;
+	flex-direction: column;
+}
+
+.footer-description-container {
+	display: flex;
+	justify-content: flex-start;
+}
+
+.footer-description {
+	font-weight: bold;
+	font-size: 16px;
+	color:#484848;
+}
+
+.footer-address-container {
+	display: flex;
+	justify-content: flex-start;
+}
+
+.footer-address {
+	color:#484848;
+	font-size: 15px;
+}
+
+.footer-paws-container {
+	display: flex;
+	justify-content: flex-start;
+}
+
+.footer-paws {
+	display: flex;
+	justify-content: flex-start;
+	
+}
+
+.paw {
+	width: 16px;
+	height: 16px;
+	margin-right: 4px;
+}
+
+.number-reviews {
+	color:#484848;
+	font-size: 14px;
+	font-weight: bold;
+}
+
+.bottom-part-container {
+	display: flex;
+	justify-content: flex-start;
+}
+
+.bottom-part {
+	width: 100%;
+	height: 500px; /* must specify height in order for scrolling with the .save to work */
+	display: flex;
+	justify-content: space-between;
+	flex-direction: column;
+	justify-content: flex-start;
+
+}
+
+.bottom-description-container {
+	display: flex;
+	justify-content: space-around;
+	flex-direction: column;
+	border-top: .4px solid rgba(0.7,0.7,0.7, .6);
+}
+
+.bottom-description-title {
+	font-weight: bold;
+	color:#484848;
+	font-size: 17px;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	margin-left: 50px;
+}
+
+.bottom-description-text {
+	margin-left: 50px;
+	margin-right: 50px;
+	margin-bottom: 15px;
+	color:#484848;
+}
+
+
+

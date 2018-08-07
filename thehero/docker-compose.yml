@@ -1,0 +1,23 @@
+version: '3'
+
+services:
+  db:
+    build: hero-photo-database/
+    image: mysql/mysql-server/5.7 
+    environment: 
+     - MYSQL_ROOT_PASSWORD=abc
+     - MYSQL_DATABASE=hero
+     - MYSQL_USER=root
+    ports:
+      - 3306:3306
+  hero:
+    build: hero-photo-service
+    depends_on:
+      - 'db'
+    restart: on-failure
+    ports:
+      - '3000:3000'
+
+
+
+

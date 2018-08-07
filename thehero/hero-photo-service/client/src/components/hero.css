@@ -1,0 +1,98 @@
+.hero {
+  height: 500px;
+  max-width: 100%;
+  flex:1;
+  display: flex;
+  justify-content: space-between;
+  background-size:cover;
+  vertical-align: middle;
+  background-repeat: no-repeat;
+  margin:0;
+ 
+}
+
+body {
+  margin: 0;
+}
+
+.hero-buttons {
+	height:30px;
+	width:85px;
+}
+
+.hero-view-photos-button {
+	height:35px;
+	width:115px;
+	font-size: 15px;
+	border-radius: 6px;
+	margin: 13px;
+	align-self: flex-end;
+}
+
+.hero-top-right-buttons {
+	padding: 12px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.hero-share-button {
+	height:35px;
+	width:115px;
+	font-size: 15px;
+	border-radius: 6px;
+	margin:6px;
+}
+
+.hero-save-button {
+	height:35px;
+	width:115px;
+	font-size: 15px;
+	border-radius: 6px;
+	margin:6px;
+}
+
+.hero-button-image {
+	width:18px;
+	height: 16px;
+	margin-right: 7px;
+}
+
+.modal-dark-black {
+  z-index:1;
+  background-color: rgba(0.8,0.8,0.8,0.8);
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-light-black {
+  z-index: 1;
+  background-color: rgb(32,32,32, .8);
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.modal-white {
+  z-index: 1;
+  background-color: rgba(255,255,255,0.8);
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

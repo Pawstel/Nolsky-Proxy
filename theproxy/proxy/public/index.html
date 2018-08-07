@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css?family=Nunito+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="http://52.49.157.131:3000/app.css">
+    <link rel="stylesheet" href="http://airpnp-reservation.us-west-2.elasticbeanstalk.com/styles.css">
+    <link rel="stylesheet" href="http://18.222.196.193:3001/styles.css">
+    <link rel="stylesheet" href="http://18.222.240.125:3002/app.css">
+    <title>Airpnp</title>
+  </head>
+  <body>
+    <style>
+     body {
+      margin: 0;
+      font-family: 'Nunito Sans', sans-serif;
+      color: #6f7678;
+     }
+
+      #listing-body {
+        justify-content: center;
+      }
+      
+      #app {
+        width: 688px;
+      }
+    </style>
+    <div id="hero"></div>
+    <div id = "gallery"> </div>
+
+    <div id="listing-body" class="row">
+      <div>
+       <div id="reviews"></div>
+       <div id="app"></div>
+     </div>
+
+     <div id="reservation"></div>
+
+    </div>
+    
+   
+    
+    <script src="/lib/react.development.js"></script>
+    <script src="/lib/react-dom.development.js"></script>
+    <script src="http://52.49.157.131:3000/bundle.js"></script>
+    <script src="http://airpnp-reservation.us-west-2.elasticbeanstalk.com/bundle.js"></script>
+    <script src="http://18.222.196.193:3001/app.js"></script>
+    <script src="http://18.222.240.125:3002/app.js"></script>
+
+    <!-- see: https://reactjs.org/docs/react-without-jsx.html -->
+    <script>
+      ReactDOM.render(
+        React.createElement(Hero, {listingId: 22}),
+        document.getElementById('hero')
+      );
+
+      ReactDOM.render(
+        React.createElement(ReservationBox, {listingId: 34}),
+        document.getElementById('reservation')
+      );
+      
+      /*ReactDOM.render(
+        React.createElement(App, {listingId:1 , id:1}),
+        document.getElementById('app')
+      );*/
+
+      ReactDOM.render(
+        React.createElement(Review, {listing_id: 34}),
+        document.getElementById('reviews')
+      );
+    
+    </script>
+  </body>
+</html>
